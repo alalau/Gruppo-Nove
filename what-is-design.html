@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="keywords" content="italiaDesign" />
+
+    <!-- still need to write description! -->
+    <meta name="description" content="stuff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+    <title>SFU italiaDesign</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/media-query.css" />
+    
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.ease.js"></script>
+    <script type="text/javascript" src="./js/froogaloop.js"></script>
+    <script type="text/javascript" src="./js/video.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <nav class="video-nav hidden">
+            <ul>
+                <li id="backLink"><a href="index.html">
+                    <span></span>
+                    <span></span>
+                    Home</a>
+                </li>
+                <li class="lesser-link">
+                    <a href="">Watch on Vimeo</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="updateable" id="content">
+
+            <section id="video" class="loading">
+                <div class="inner">
+                    <iframe id="video-frame" src="http://player.vimeo.com/video/70989263?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;player_id=video-frame&amps;api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                    <div id="overlay"></div>
+
+                    <div id="helpmesee" class="hidden"></div>
+
+                    <div class="simple hidden" id="playPauseButtons">
+                        <button class="play" id="playButton">
+                            <span></span>
+                        </button>
+                        <button class="pause show" id="pauseButton">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="volume-off show" id="volumeOffBtn"></button>
+                        <button class="volume-on" id="volumeOnBtn"></button>
+                    </div>
+                    <dl class="listeners"><dt>Event Listeners</dt><dd><label><input class="playProgress" type="checkbox" checked />playProgress</label></dd></dl>
+
+                </div>
+            </section>
+
+            <div id="chapters" class="shrunk">
+                <div class="chapter" id="chapter-single" seekTo="10">
+                    <p>&nbsp;</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+            </div>
+
+            <div id="progressbar" class="shrunk">
+                <div id="progressbarprogress"></div>
+            </div>
+
+            <div id="time" class="hidden">
+                <p id="progress">0:00</p>
+                <p>/</p>
+                <p id="duration">0:00</p>
+            </div>
+
+            <div id="video-title" class="hidden not-clickable">
+                <h2>What Is Design?</h2>
+            </div>
+
+        </div> <!-- content -->
+
+    </div><!-- container -->
+</html>

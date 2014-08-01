@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+	<meta name="keywords" content="italiaDesign" />
+
+	<!-- still need to write description! -->
+    <meta name="description" content="stuff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+	<title>SFU italiaDesign</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/media-query.css" />
+	
+	<!-- JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+
+	<!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scrollTop     = $(window).scrollTop(),
+            elementOffset = $('#whatIsDesign').offset().top,
+            distance      = (elementOffset - scrollTop);
+            if (distance < ($(window).height() / 2 ) ) {
+                 $('#whatIsDesignImg').fadeTo( 750 , 1, function() {
+                    // Animation complete.
+                  });
+            }
+
+            mapOffset = $('#mapPadding').offset().top,
+            mapDistance  = (mapOffset - scrollTop);
+            $("#map-section").css({
+                top: mapDistance / 4
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+		<nav class="hero">
+            <div id="nav-logo">
+                <div id="nav-logo-controls">
+                    <span id="line-1"></span>
+                    <span id="line-2"></span>
+                    <span id="line-3"></span>
+                </div>
+            </div>
+			<ul>
+                <li id="navHomeLink"><a href="index.html" class="active">Home</a></li>
+				<li><a href="interviews.html" id="interviewLink">
+					<div class="nav_link">Interviews</div>
+				</a></li>
+				<li><a href="experience.html" id="experienceLink">
+					<div class="nav_link">Experience</div>
+				</a></li>
+				<li><a href="team.html" id="teamLink">
+					<div class="nav_link">Team</div>
+				</a></li>
+			</ul>
+		</nav>
+
+		<nav class="hero2">
+			<ul>
+				<li id="past-hero" class="lesser-link">
+					<a href="" id="pastLinkToggle2">Past</a>
+					<a class="pastLink" href="dutchdesign2013goeshere.html">Italia Design 2012</a>
+					<a class="pastLink" href="itali2design2012goeshere.html">Dutch Design 2013</a>
+				</li>
+			</ul>
+		</nav>
+
+        <div id="main-content">
+
+        	<section id="home-hero">
+        		<div id="hero-logo-wrapper">
+        			<img id="hero-logo" src="images/italiadesignlogo.svg" onerror="this.onerror=null; this.src='italiadesignlogo.png'">
+        		</div>
+
+        		<div class="left-padder"></div>
+        		<div class="right-padder"></div>
+        		<div class="top-padder"></div>
+        		<div class="bottom-angle-left"></div><div class="bottom-angle-right"></div>
+
+        		<div id="mobile-hero-bg"></div>
+
+        		<div class="videos">
+					<video id="interview-hero-video" class="heroVid" data-video="interviews" autoplay muted loop preload>
+						<source class="interview-vid" src="videos/interviews.webm" type="video/webm">
+                        <source class="interview-vid" src="videos/interviews.mp4" type="video/mp4">	
+						<source class="interview-vid" src="videos/interviews.ogv" type="video/ogv">
+					</video>
+					<video id="experience-hero-video" class="heroVid" data-video="experience" muted loop preload>
+                        <source src="videos/experience.webm" type="video/webm">
+						<source src="videos/experience.mp4" type="video/mp4">
+						<source src="videos/experience.ogv" type="video/ogv">
+					</video>
+					<video id="team-hero-video" class="heroVid" data-video="team" muted loop preload>
+                        <source src="videos/team.webm" type="video/webm">
+						<source src="videos/team.mp4" type="video/mp4">
+						<source src="videos/team.ogv" type="video/ogv">
+					</video>
+				</div>
+
+				<div id="hero-overlay">
+					<div id="pattern"></div>
+				</div>
+
+        	</section> <!-- [END] Hero -->
+
+            <div class="white-wrapper">
+            	<section id="whatIsDesign">
+                    <img id="whatIsDesignImg" src="images/whatIsDesignImg.jpg" alt=":(">
+                    <div id="whatIs">
+                        <span></span>
+                        <h1>What</h1>
+                        <h1 id="ishalf">is</h1>
+                        <p>Each year we ask leading designers, thinkers, architects and design manufacturers what design means to them. This year, answers were nothing short of inspiring.</p>
+                    </div>
+                    <h1 id="designTitle">design?</h1>
+                    <div id="whatIsDesignQuote">
+                        <p class="quote">"Design is social engagement. Not just between you and another person, but between you and your community, you into your cultural surrounding, you into your society."</p>
+                        <p id="designerQuoted"> - Jan-Christoph Zoels</p>
+                    </div>
+            	</section>
+            </div>
+
+            <div id="watchFilm">
+                <a id="whatIsDesignLinkButton" class="linkButton" href="what-is-design.html">Watch the Film</a>
+            </div>
+
+            <div id="allInterviews">
+                <a class="linkButton" href="interviews.html">All Interviews</a>
+            </div>
+
+        	<section id="whatItIsPlaya">
+                <div id="italiadesign">
+                    <img src="images/italia-design-type.svg" onerror="this.onerror=null; this.src='italia-design-type.png'">
+                </div>
+        		<div id="description">
+        			<p>Italia Design is an undergraduate field school and research program offered by the School of Interactive Arts + Technology (SIAT) at Simon Fraser University in Vancouver, Canada. This website is the legacy project of the bi-annual research results conducted in the area of design and innovation, under the directorship of Russell Taylor, Senior Lecturer in Design, SIAT.<br><br>The most significant contribution to the field are interviews conducted with emergent and established players in the Italian design community. Each year, a new team builds on the previous year’s research.<br><br>We are Gruppo Nove: the ninth group of senior design students to embark on this adventure.</p>
+                    <a class="linkButton" href="team.html">Meet the Team</a>
+        		</div>
+        	</section>
+            <div class="map-padding" id="mapPadding"></div>
+
+		</div> <!-- end main content -->
+
+        <section id="map-section">
+
+                <div id="map">
+                    <img src="images/map-white.jpg" alt="italy map" id="mapImg">
+
+                    <div class="marker-wrapper" id="milan-wrapper">
+                        <a class="marker" href="experience/milan.html">
+                            <div class="marker-label leftside">Milan</div>
+                            <div class="marker-glow"></div><div class="marker-inner"></div>
+                        </a>
+                    </div>
+
+                    <div class="marker-wrapper" id="bologna-wrapper" >
+                        <a class="marker" href="experience/bologna.html">
+                            <div class="marker-label">Bologna</div>
+                            <div class="marker-glow"></div><div class="marker-inner"></div>
+                        </a>
+                    </div>
+
+                    <div class="marker-wrapper" id="lerici-wrapper" >
+                        <a class="marker" href="experience/lerici.html">
+                            <div class="marker-label leftside">Lerici</div>
+                            <div class="marker-glow"></div><div class="marker-inner"></div>
+                        </a>
+                    </div>
+
+                    <div class="marker-wrapper" id="florence-wrapper" >
+                        <a class="marker" href="experience/florence.html">
+                            <div class="marker-label">Florence</div>
+                            <div class="marker-glow"></div><div class="marker-inner"></div>
+                        </a>
+                    </div>
+
+                    <div class="marker-wrapper" id="tuscany-wrapper" >
+                        <a class="marker" href="experience/tuscany.html">
+                            <div class="marker-label tuscany">Tuscan<br>Hill Towns</div>
+                            <div class="marker-glow"></div><div class="marker-inner"></div>
+                        </a>
+                    </div>
+
+                    <div class="marker-wrapper" id="rome-wrapper" >
+                        <a class="marker" href="experience/tuscany.html">
+                            <div class="marker-label">Rome</div>
+                            <div class="marker-glow"></div><div class="marker-inner"></div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <a class="linkButton" id="map-linkButton" href="experience.html">More Experiences</a>
+
+            </section>
+
+</body>
+</html>

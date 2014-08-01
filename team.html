@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+	<meta name="keywords" content="italiaDesign" />
+
+	<!-- still need to write description! -->
+    <meta name="description" content="stuff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+	<title>SFU italiaDesign</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/media-query.css" />
+	
+	<!-- JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+	<script>
+		$(window).scroll(function(){
+	        var scrollTop = $(window).scrollTop();
+	        var newOpacity = 1 - (($(window).scrollTop() * 1.2) / ($(window).height() / 2));
+	        $("#intro-team").css({
+	        	marginTop: -(100 - newOpacity*100),
+                opacity: newOpacity
+            });
+   		});
+	</script>
+
+</head>
+
+<body>
+	<div class="container" id="main">
+		<nav>
+			<div id="nav-logo">
+				<a href="index.html"><img id="nav-logo-img" src="images/italiadesignlogo-nav-1.svg" onerror="this.onerror=null; this.src='italiadesignlogo-nav-1.png'"></a>
+				<div id="nav-logo-controls">
+					<span id="line-1"></span>
+					<span id="line-2"></span>
+					<span id="line-3"></span>
+				</div>
+			</div>
+			<ul>
+				<li id="navHomeLink"><a href="index.html">Home</a></li>
+				<li><a href="interviews.html">Interviews</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="team.html"  class="active">Team</a></li>
+				<li id="past" class="lesser-link">
+					<a href="" id="pastLinkToggle">Past</a>
+					<div class="sideline"></div>
+					<a class="pastLink" href="dutchdesign2013goeshere.html">Italia Design 2012</a>
+					<a class="pastLink" href="itali2design2012goeshere.html">Dutch Design 2013</a>
+				</li>
+			</ul>
+		</nav>
+
+        <div class="updateable" id="content">
+
+        	<div id="intro-team">
+        		<div id="grouppologo">IX</div>
+        		<h1>We are Gruppo</h1>
+        		<span></span>
+        		<h1>Nove</h1>
+        		<h2>The ninth group of senior design students to participate in <br>
+        		 Simon Fraser University's italia Design Field School.</h2>
+        		 <div id="year">2014</div>
+        	</div>
+
+        	<div id="gruppo-grid">
+
+        		<div class="gruppo-member" id="russ">
+        			<a href="team/RussellTaylor.html">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Russell</h2>
+							<h2>Taylor</h2>
+							<h3>Tour Guide</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+	        		</a>
+        		</div>
+
+        		<div class="gruppo-member" id="vivian">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Vivian</h2>
+							<h2>Hu</h2>
+							<h3>The Chef</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="juan">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Juan</h2>
+							<h2>Henao</h2>
+							<h3>Wine Connoisseur</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+
+        		<div class="gruppo-member" id="aaron">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Aaron</h2>
+							<h2>La Lau</h2>
+							<h3>Beatbox Producer</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="gracelle">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Gracelle</h2>
+							<h2>Mensina</h2>
+							<h3>Dance choreographer</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="sean">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Sean</h2>
+							<h2>Brouwer</h2>
+							<h3>Baller Futuristic Gangster</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="judy">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Judy</h2>
+							<h2>Zheng</h2>
+							<h3>Good-Vibes Facilitator</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member spacer">
+        		</div>
+
+        		<div class="gruppo-member spacer">
+        		</div>
+
+
+        		<div class="gruppo-member" id="scott">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Scott</h2>
+							<h2>Hosfall</h2>
+							<h3>Timelapse King</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="sonya">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Sonya</h2>
+							<h2>Spowage</h2>
+							<h3>Sim Card Orchestrator</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="liam">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Liam</h2>
+							<h2>Leyland</h2>
+							<h3>Bicycle Stunt Coordinator</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="taylor">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Taylor</h2>
+							<h2>Ward</h2>
+							<h3>Native American</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="roxanne">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Roxanne</h2>
+							<h2>Henschke</h2>
+							<h3>Executive Sass</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<div class="gruppo-member" id="terrence">
+        			<div class="gruppo-member-wrapper">
+	        			<div class="gruppo-member-title">
+							<h2>Terrence</h2>
+							<h2>Ma</h2>
+							<h3>The Captain</h3>
+						</div>
+	        			<div class="gruppo-member-image" id=""></div>
+	        		</div>
+        		</div>
+
+        		<a href="http://www.sfu.ca/~arlalau/gruppoNoveSoundboard" target="_blank"><img id="linguine" src="images/linguine.jpg"></a>
+
+        		<div class="gruppo-footer">
+	        		<h2>Contact</h2>
+        			<p>School of Interactive Arts + Technology (SIAT) | Simon Fraser University Surrey<br>
+						250 -13450 102 Avenue | Surrey, BC V3T 0A3 CANADA<br>
+						phone: +1 778.782.7474
+        			</p>
+        			<div class="social-icons">
+                        <a class="social-link facebook" target="_blank" href="https://www.facebook.com/sfuitalia"></a>
+                        <a class="social-link twitter" target="_blank" href="https://twitter.com/sfuitalia"></a>
+                        <a class="social-link instagram" target="_blank" href="http://instagram.com/sfuitalia"></a>
+        			</div>
+	        	</div>
+
+        	</div>
+		</div>
+
+	</div><!-- container -->
+</html>

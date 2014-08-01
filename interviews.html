@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+	<meta name="keywords" content="italiaDesign" />
+
+	<!-- still need to write description! -->
+    <meta name="description" content="stuff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+	<title>SFU italiaDesign</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/media-query.css" />
+	
+	<!-- JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.ease.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="js/isotope.js"></script> 
+
+	<!-- FONTS -->
+</head>
+
+<body>
+	<div class="container" id="main">
+		<nav>
+			<div id="nav-logo">
+				<a href="index.html"><img id="nav-logo-img" src="images/italiadesignlogo-nav-1.svg" onerror="this.onerror=null; this.src='italiadesignlogo-nav-1.png'"></a>
+				<div id="nav-logo-controls">
+					<span id="line-1"></span>
+					<span id="line-2"></span>
+					<span id="line-3"></span>
+				</div>
+			</div>
+			<ul>
+				<li id="navHomeLink"><a href="index.html">Home</a></li>
+				<li><a href="interviews.html" class="active">Interviews</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li id="past" class="lesser-link">
+					<a href="" id="pastLinkToggle">Past</a>
+					<div class="sideline"></div>
+					<a class="pastLink" href="dutchdesign2013goeshere.html">Italia Design 2012</a>
+					<a class="pastLink" href="itali2design2012goeshere.html">Dutch Design 2013</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="updateable" id="content">
+        	<div class="filterer" id="filters">
+        		<h3>I'm interested in</h3>
+				    <div id="answers">
+				    	<span class="drop-down-arrow"></span>
+				    	<ul>
+				    		<li data-filter="*" id="first">Your answer</li>
+				    		<li data-filter=".product">product</li>
+				    		<li data-filter=".interaction">interaction</li>
+				    		<li data-filter=".graphic">graphic</li>
+				    		<li data-filter=".brand">brand</li>
+				    		<li data-filter=".experience">experience</li>
+				    		<li data-filter=".arch">architecture</li>
+				    		<li data-filter=".italian">Italian</li>
+				    		<li data-filter=".northwest">North-West</li>
+				    	</ul>
+				    </div>
+				<h3>design</h3>
+			</div>
+
+		<div id="pushDown"></div>
+		<div class="isotope" id="interviewGrid">
+			<!--	1 	-->
+			  <div id="item-1" class="item height2 italian product">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-1" class="interviewPic"></div>
+				  		<div id="bg-1" class="bg-img"></div>
+				  	</div>
+			  	</a>
+		  	  	<div class="interview-title">
+					<h2>Fabio</h2>
+					<h2>Novembre</h2>
+				</div>
+			  </div>
+
+			<!--	2 	-->
+			  <div id="item-2" class="item width2 italian product">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-2" class="interviewPic"></div>
+				  		<div id="bg-2" class="bg-img"></div>
+				  	</div>
+				</a>
+			  	  	<div class="interview-title">
+						<h2>Giulio</h2>
+						<h2>Iacchetti</h2>
+					</div>
+			  </div>
+
+			  <div class="bumpDown item italian graphic interaction product">
+			  </div>
+
+			<!--	3 	-->
+			  <div id="item-3" class="item italian product">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-3" class="interviewPic"></div>
+				  		<div id="bg-3" class="bg-img"></div>
+				  	</div>
+				 </a>
+			  	  	<div class="interview-title">
+						<h2>FRANCESCA</h2>
+						<h2>LANZAVECCHIA</h2>
+						<h3>Lanzavecchia + Wai</h3>
+					</div>
+			  </div>
+
+			<!--	4 	-->
+			  <div id="item-4" class="item italian graphic">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-4" class="interviewPic"></div>
+				  		<div id="bg-4" class="bg-img"></div>
+				  	</div>
+				</a>
+			  	  	<div class="interview-title">
+						<h2>Marta</h2>
+						<h2>Bernstein</h2>
+						<h3>LS Graphic Design</h3>
+					</div>
+			  </div>
+
+			<!--	5 	-->
+			  <div id="item-5" class="item width2 height2 italian brand">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-5" class="interviewPic"></div>
+				  		<div id="bg-5" class="bg-img"></div>
+				  	</div>
+				</a>
+			  	  	<div class="interview-title">
+						<h2>MARIA</h2>
+						<h2>SEBREGONDI</h2>
+						<h3>Moleskine</h3>
+					</div>
+			  </div>
+
+			<!--	6 	-->
+			  <div id="item-6" class="item italian height2 arch">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-6" class="interviewPic"></div>
+				  		<div id="bg-6" class="bg-img"></div>
+				  	</div>
+				</a>
+			  	  	<div class="interview-title">
+						<h2>Andrea</h2>
+						<h2>Ponsi</h2>
+					</div>
+			  </div>
+
+			<!--	7 	-->
+			  <div id="item-7" class="item italian product">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-7" class="interviewPic"></div>
+				  		<div id="bg-7" class="bg-img"></div>
+				  	</div>
+				</a>
+			  	  	<div class="interview-title">
+						<h2>Franco</h2>
+						<h2>Dominici</h2>
+						<h3>Segis</h3>
+					</div>
+			  </div>
+
+			<!--	8 	-->
+			  <div id="item-8" class="item height2 italian interaction">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-8" class="interviewPic"></div>
+				  		<div id="bg-8" class="bg-img"></div>
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Zoe</h2>
+						<h2>Romano</h2>
+						<h3>Arduino / WeMake</h3>
+					</div>
+			  </div>
+
+			<!--	9 	-->
+			  <div id="item-9" class="item italian product">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-9" class="interviewPic"></div>
+				  		<div id="bg-9" class="bg-img"></div>
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Alessandra</h2>
+						<h2>Baldereschi</h2>
+					</div>
+			  </div>
+
+			<!--	10 	-->
+			  <div id="item-10" class="item width2 italian experience">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-10" class="interviewPic"></div>
+				  		<div id="bg-10" class="bg-img"></div>
+				  	</div>
+				</a>
+			  	  	<div class="interview-title">
+						<h2>Jan-Christoph</h2>
+						<h2>Zoels</h2>
+						<h3>Experientia</h3>
+					</div>
+			  </div>
+
+			<!--	11 	-->
+			  <div id="item-11" class="item width2 height2 italian interaction graphic">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-11" class="interviewPic"></div>
+				  		<div id="bg-11" class="bg-img"></div>
+				  	</div>
+				</a>
+					<div class="interview-title">
+						<h2>Accurat</h2>
+					</div>
+			  </div>
+
+			<!--	12 	-->
+			  <div id="item-12" class="item brand italian interaction graphic">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-12" class="interviewPic"></div>
+				  		<div id="bg-12" class="bg-img"></div>
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>GIORGIO</h2>
+						<h2>OLIVERO</h2>
+						<h3>ToDo</h3>
+					</div>
+			  </div>
+
+			<!--	13 	-->
+			  <div id="item-13" class="item height2 italian interaction">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-13" class="interviewPic"></div>
+				  		<div id="bg-13" class="bg-img"></div>
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Enrico</h2>
+						<h2>Bassi</h2>
+						<h3>Fablab Turin</h3>
+					</div>
+			  </div>
+
+			<!--	14 	-->
+			  <div id="item-14" class="item product italian arch">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-14" class="interviewPic"></div>
+				  		<div id="bg-14" class="bg-img"></div>
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Marco</h2>
+						<h2>Zanuso Jr.</h2>
+					</div>
+			  </div>
+
+			  <div class="bumpDown item italian graphic product experience interaction">
+			  </div>
+
+			<!--	15 	-->
+			  <div id="item-15" class="item width italian product brand">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-15" class="interviewPic"></div>
+				  		<div id="bg-15" class="bg-img"></div>
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Lucio Luzo</h2>
+						<h2>Lazzara</h2>
+						<h3>Zetalab</h3>
+					</div>
+			  </div>
+
+			  <!--	16 	-->
+			  <div id="item-16" class="item northwest width2">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-16" class="interviewPic"></div>
+				  		<div id="bg-16" class="bg-img"></div>
+				  		<img class="flag" src="images/icons/usa.svg" onerror="this.onerror=null; this.src='images/icons/usa.png'">
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>David</h2>
+						<h2>Butler</h2>
+						<h3>Le Caviste</h3>
+					</div>
+			  </div>
+
+			  <!--	17 	-->
+			  <div id="item-17" class="item northwest height2 product">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-17" class="interviewPic"></div>
+				  		<div id="bg-17" class="bg-img"></div>
+				  		<img class="flag" src="images/icons/usa.svg" onerror="this.onerror=null; this.src='images/icons/usa.png'">
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Heather</h2>
+						<h2>Pletschett</h2>
+						<h3>Knoll</h3>
+					</div>
+			  </div>
+
+			  <!--	18 	-->
+			  <div id="item-18" class="item northwest arch">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-18" class="interviewPic"></div>
+				  		<div id="bg-18" class="bg-img"></div>
+				  		<img class="flag" src="images/icons/usa.svg" onerror="this.onerror=null; this.src='images/icons/usa.png'">
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Jay</h2>
+						<h2>Deguchi</h2>
+						<h3>Suyama Peterson Deguchi</h3>
+					</div>
+			  </div>
+
+			  <!--	20 	-->
+			  <div id="item-20" class="item northwest experience">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-20" class="interviewPic"></div>
+				  		<div id="bg-20" class="bg-img"></div>
+				  		<img class="flag" src="images/icons/usa.svg" onerror="this.onerror=null; this.src='images/icons/usa.png'">
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Josh</h2>
+						<h2>Hayward</h2>
+						<h3>Digital Kitchen</h3>
+					</div>
+			  </div>
+
+			  <!--	19 	-->
+			  <div id="item-19" class="item northwest width2 brand">
+			  	<a class="interviewLink" href="interviews/interview-1.html">
+				  	<div class="item-inner">
+				  		<div id="interviewPic-19" class="interviewPic"></div>
+				  		<div id="bg-19" class="bg-img"></div>
+				  		<img class="flag" src="images/icons/canada.svg" onerror="this.onerror=null; this.src='images/icons/canada.png'">
+				  	</div>
+				</a>
+			  		<div class="interview-title">
+						<h2>Glasfurd &amp;</h2>
+						<h2>Walker</h2>
+					</div>
+			  </div>
+
+
+		</div>
+
+
+			<!-- <div class="bg-img"></div> -->
+
+		</div>
+
+	</div><!-- container -->
+
+	<script src="js/iso.js"></script>
+</html>

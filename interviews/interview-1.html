@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="keywords" content="italiaDesign" />
+
+    <!-- still need to write description! -->
+    <meta name="description" content="stuff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+    <title>SFU italiaDesign</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/media-query.css" />
+    
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.ease.js"></script>
+    <script type="text/javascript" src="../js/froogaloop.js"></script>
+    <script type="text/javascript" src="../js/video.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <nav class="video-nav hidden">
+            <ul>
+                <li id="backLink"><a href="../interviews.html">
+                    <span></span>
+                    <span></span>
+                    Interviews</a>
+                </li>
+                <li class="lesser-link">
+                    <a href="">Watch on Vimeo</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="updateable" id="content">
+
+            <section id="video" class="loading">
+                <div class="inner">
+                    <iframe id="video-frame" src="http://player.vimeo.com/video/71398588?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;player_id=video-frame&amps;api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                    <div id="overlay"></div>
+
+                    <div id="helpmesee" class="hidden"></div>
+
+                    <div class="simple hidden" id="playPauseButtons">
+                        <button class="play" id="playButton">
+                            <span></span>
+                        </button>
+                        <button class="pause show" id="pauseButton">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="volume-off show" id="volumeOffBtn"></button>
+                        <button class="volume-on" id="volumeOnBtn"></button>
+                    </div>
+                    <dl class="listeners"><dt>Event Listeners</dt><dd><label><input class="playProgress" type="checkbox" checked />playProgress</label></dd></dl>
+
+                </div>
+            </section>
+
+            <div class="bio-interview" id="bio">
+                <div class="bio-interview-wrapper">
+                    <div class="bio-interview-inner">
+                        <div id="topOfBio"></div>
+                            <div id="playEndButtons">
+                                <a seekTo="208">Replay</a>
+                                <a seekTo="208">Share</a>
+                                <a seekTo="208">Next</a>
+                            </div>
+                            <img src="../images/interviews/martha_bernstein_headshot.jpg" class="bioPic">
+                            <h1 class="bioHeader">Marta Bernstein</h1>
+                            <p class="bioDescription">
+                                Marta Bernstein is a graphic and type designer. She co-founded the Milan-based studio "LS Graphic Design” in 2006, while receiving her masters of design at the Royal Academy of Arts in the Netherlands. During her masters, she developed an editorial type family called “Alice” -- a typeface which receives it’s personality from it's broad, eye-friendly proportions without being overwhelming on the page. Her studio has done work for a wide variety of clients from NGO’s to public institutions to international companies. 
+                            </p>
+                            <p class="quote" id="bioQuote-1">
+                                “Typography in theory doesn't really exist, you have to master it in practice”
+                            </p>
+                            <ul class="bio-images">
+                                <li class="bio-image image-1-portrait">
+                                    <img src="../images/interviews/martha_bernstein_portrait.jpg">
+                                    <div class="imgDimmer"></div>
+                                    <p class="product-name">Product Name</p>
+                                </li>
+                                
+                                <li class="bio-image image-2-landscape">
+                                    <img src="../images/interviews/martha_bernstein_landscape-1.jpg">
+                                    <div class="imgDimmer"></div>
+                                    <p class="product-name">Product Name</p>
+                                </li>
+                                <li class="bio-image image-3-landscape">
+                                    <img src="../images/interviews/martha_bernstein_landscape-2.jpg">
+                                    <div class="imgDimmer"></div>
+                                    <p class="product-name">Product Name</p>
+                                </li>
+                                
+                                <li class="bio-image image-4-square">
+                                    <img src="../images/interviews/martha_bernstein_square.jpg">
+                                    <div class="imgDimmer"></div>
+                                    <p class="product-name">Product Name</p>
+                                </li>
+                            </ul>
+                            <p class="quote" id="bioQuote-2">
+                                “There are many different ways to be a designer, but one thing they all have in common is a slightly different way of seeing the world. You see connection where other people don’t.”
+                            </p>
+                            <div class="interviewers-pic">
+                                <img src="../images/interviews/martha_bernstein_interviewers.jpg">
+                                <p>This interview was conducted by 
+                                    <a href="../team/JudyZheng">Judy Zheng</a> and 
+                                    <a href="../team/JuanHenao">Juan Henao</a></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="helpmeseeBio"></div>
+
+            <div id="chapters" class="shrunk">
+                <div class="chapter" id="chapter-1" seekTo="10">
+                    <p>Inspiration</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+                <div class="chapter" id="chapter-2" seekTo="72">
+                    <p>Opportunities</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+                <div class="chapter" id="chapter-3" seekTo="131">
+                    <p>Lamp</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+                <div class="chapter" id="chapter-4" seekTo="208">
+                    <p>Spoons</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+                 <div class="chapter" id="chapter-5" seekTo="288">
+                    <p>End</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+            </div>
+
+            <div id="progressbar" class="shrunk">
+                <div id="progressbarprogress"></div>
+            </div>
+
+            <div id="time" class="hidden">
+                <p id="progress">0:00</p>
+                <p>/</p>
+                <p id="duration">0:00</p>
+            </div>
+
+            <div id="video-title" class="hidden">
+                <div class="about-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="name">
+                    <h3>About</h3>
+                    <h2>MARTHA BERNSTEIN</h2>
+                </div>
+            </div>
+
+        </div> <!-- content -->
+
+    </div><!-- container -->
+</html>
