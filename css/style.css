@@ -251,7 +251,11 @@ nav.hidden {
             border-bottom: 2px solid black;
             border-bottom: 2px solid;
         }
-
+        
+        nav ul li a.active:hover {
+        	color: black;
+			cursor:  default;
+        }
 
         nav li.lesser-link a {
             color: #afafaf;
