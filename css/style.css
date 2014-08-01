@@ -978,11 +978,11 @@ img#mapImg {
     -ms-transform-origin: center center;
     -o-transform-origin: center center;
     transform-origin: center center;
-    -webkit-transition: all 100ms ease;
-    -moz-transition: all 100ms ease;
-    -ms-transition: all 100ms ease;
-    -o-transition: all 100ms ease;
-    transition: all 100ms ease;
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
 }
 
 #backLink span:first-child {
@@ -1004,6 +1004,9 @@ img#mapImg {
     top: 46px;
     left: 30px;
 }
+
+#backLink:hover span { background: #eb2030; }
+#backLink:hover a { color: #eb2030; }
 
 #video-title {
     z-index: 999;
@@ -1045,6 +1048,7 @@ img#mapImg {
     opacity: 0;
 }
 
+
 .about-icon {
     position: relative;
     width: 20px;
@@ -1068,11 +1072,11 @@ img#mapImg {
         -ms-transform-origin:       center center;
         -o-transform-origin:        center center;
         transform-origin:           center center;
-        -webkit-transition: all 100ms ease;
-        -moz-transition:    all 100ms ease;
-        -ms-transition:     all 100ms ease;
-        -o-transition:      all 100ms ease;
-        transition:         all 100ms ease;
+        -webkit-transition: background 500ms ease;
+        -moz-transition:    background 500ms ease;
+        -ms-transition:     background 500ms ease;
+        -o-transition:      background 500ms ease;
+        transition:         background 500ms ease;
     }
 
     #video-title:hover .about-icon span {
@@ -1080,31 +1084,41 @@ img#mapImg {
     }
 
             .about-icon span:first-child {
-                -webkit-transform:  rotate(45deg);
-                -moz-transform:     rotate(45deg);
-                -ms-transform:      rotate(45deg);
-                -o-transform:       rotate(45deg);
-                transform:          rotate(45deg);
-                left: 70%;
-            }
-
-            .about-icon span:last-child {
                 -webkit-transform:  rotate(-45deg);
                 -moz-transform:     rotate(-45deg);
                 -ms-transform:      rotate(-45deg);
                 -o-transform:       rotate(-45deg);
                 transform:          rotate(-45deg);
+                left: 70%;
+            }
+
+            .about-icon span:last-child {
+                -webkit-transform:  rotate(45deg);
+                -moz-transform:     rotate(45deg);
+                -ms-transform:      rotate(45deg);
+                -o-transform:       rotate(45deg);
+                transform:          rotate(45deg);
                 left: 10%;
             }
 
     #video-title.scrolled .about-icon span:first-child {
         background: #eb2030;
         left: 50%;
+		-webkit-transition: all 100ms ease;
+        -moz-transition:    all 100ms ease;
+        -ms-transition:     all 100ms ease;
+        -o-transition:      all 100ms ease;
+        transition:         all 100ms ease;
     }
 
     #video-title.scrolled .about-icon span:last-child {
         background: #eb2030;
         left: 50%;
+        -webkit-transition: all 100ms ease;
+        -moz-transition:    all 100ms ease;
+        -ms-transition:     all 100ms ease;
+        -o-transition:      all 100ms ease;
+        transition:         all 100ms ease;
     }
 
     #video-title.scrolled:hover .about-icon span:first-child {
