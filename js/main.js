@@ -43,7 +43,7 @@ $(function() {
 	            marginTop: newScrollTop
 	        }, 350);
 	        $("#nav-logo").removeClass("scrolled");
-	        $('nav ul').removeClass("untouchable");
+	        $('nav').removeClass("untouchable");
 	    } else {
 	    	$('nav ul').toggleClass("down");
 	    	$('#nav-logo-controls').toggleClass("down");

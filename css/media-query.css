@@ -550,6 +550,150 @@ and (max-width : 768px) {
 		padding-bottom: 80px;
 	}
 
+	#video {
+		width: 100%;
+		position: relative;
+	}
+
+	#video .inner {
+		width: 100%;
+		left: 0;
+		top: 0;
+		margin-left: 0;
+		position: relative;
+		padding-bottom: 57%;
+	}
+
+	#overlay {
+		display: none;
+	}
+
+	#content {
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 100px;
+	}
+
+	#helpmesee 		{ display: none !important; }
+	#video-title 	{ display: none !important; }
+	#helpmeseeBio 	{ display: none !important; }
+	#progressbar 	{ display: none !important; }
+	#chapters	 	{ display: none !important; }
+	#time		 	{ display: none !important; }
+	#playPauseButtons { display: none !important; }
+
+
+	nav.video-nav.hidden {
+		opacity: 1;
+	}
+
+	nav.video-nav {
+		padding: 0;
+		height: 100px;
+		position: absolute;
+		background: white;
+	}
+
+	nav.video-nav ul {
+		top: 0 !important;
+	}
+
+	nav.video-nav ul li {
+		width: 200px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	nav.video-nav li.lesser-link {
+		display: none;
+	}
+
+	nav.video-nav ul li a {
+		color: black;
+		padding: 40px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	#backLink span {
+		background: black;
+	}
+
+	nav.video-nav.untouchable {
+		pointer-events: all !important;
+	}
+
+	.bioPic {
+		position: relative;
+		width: 50%;
+		max-width: 500px;
+		display: inline-block;
+		margin: 0;
+		float: left;
+	}
+
+	p.bioDescription {
+		width: 50%;
+		position: initial;
+		float: left;
+		margin: 0;
+		padding: 50px;
+		padding-left: 0px;
+	}
+
+	h1.bioHeader {
+		left: 40px;
+		top: 270px;
+	}
+
+	p#bioQuote-1 {
+		display: inline-block;
+		width: 100%;
+		padding: 30px 50px;
+		max-width: 600px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	li.bio-image {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		width: 50%;
+		float: left;
+		padding: 20px !important;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+
+	p#bioQuote-2 {
+		position: relative;
+		display: inline-block;
+		top: 0;
+		bottom: 0;
+		padding: 30px;
+		margin: 0;
+		right: 0;
+		float: left;
+	}
+
+	p.product-name {
+		opacity: 1;
+	}
+
+	.interviewers-pic img {
+		width: 100%;
+	}
+
+	.interviewers-pic {
+		padding: 30px;
+	}
+
+	.bio-interview-inner {
+		margin: 0;
+	}
 }
 
 
@@ -661,6 +805,41 @@ and (max-width : 480px) {
 		float: initial;
 		padding: 20px 0;
 		margin: 0;
+	}
+
+	p.bioDescription {
+		width: 100%;
+		position: relative;
+		left: 0;
+		float: none;
+		top: 0;
+		padding: 50px;
+		display: inline-block;
+		padding-top: 0;
+	}
+
+	.bioPic {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	h1.bioHeader {
+		position: relative;
+		display: inline-block;
+		top: 0;
+		text-align: center;
+		left: 0;
+		margin-left: 10%;
+		margin: 0px 50px 20px;
+	}
+
+	li.bio-image {
+		width: 100%;
+		padding: 10px 30px !important;
+	}
+
+	p#bioQuote-2 {
+		width: 100%;
 	}
 
 }

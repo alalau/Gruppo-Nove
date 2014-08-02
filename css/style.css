@@ -1449,7 +1449,7 @@ dd {
     bottom: -75px;
     margin-left: -55%;
     text-align: center;
-    background: black;
+    background: #fafafa;
     z-index: 1; 
 }
 
@@ -1682,7 +1682,6 @@ p#bioQuote-1 {
 
 .bio-image:hover {
     z-index: 99;
-    background: white;
 }
 
 .bio-image:hover .imgDimmer{
