@@ -1515,8 +1515,10 @@ dd {
     display: inline-block;
     margin: 0;
     float: left;
-    margin-right: 4px;
+    padding-right: 4px;
 }
+
+.chapter:last-child { padding-right: 0; }
 
 .chapter-highlight {
     width: 100%;
@@ -1559,7 +1561,7 @@ dd {
     #chapter-2 { width: 17%; }
     #chapter-3 { width: 20%; color: #00b4ad; }
     #chapter-4 { width: 22%; color: #eac432; }
-    #chapter-5 { width: 19%; color: #E9712F; }
+    #chapter-5 { width: 21%; color: #E9712F; }
 
 #helpmesee {
     pointer-events: none;
