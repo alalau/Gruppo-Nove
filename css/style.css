@@ -259,6 +259,7 @@ nav.hidden {
 
         nav li.lesser-link a {
             color: #afafaf;
+            margin-right: 0;
         }
 
         nav.hero2 li.lesser-link a {
@@ -997,7 +998,7 @@ img#mapImg {
     -o-transform:       rotate(45deg);
     transform:          rotate(45deg);
     top: 40px;
-    left: 30px;
+    left: 33px;
 }
 
 #backLink span:last-child {
@@ -1007,7 +1008,7 @@ img#mapImg {
     -o-transform:       rotate(-45deg);
     transform:          rotate(-45deg);
     top: 46px;
-    left: 30px;
+    left: 33px;
 }
 
 #backLink:hover span { background: #eb2030; }
@@ -1024,7 +1025,7 @@ img#mapImg {
     -ms-transition:     opacity 500ms ease;
     -o-transition:      opacity 500ms ease;
     transition:         opacity 500ms ease;
-    left: 30px;
+    left: 35px;
     bottom: 66px;
 }
 
@@ -1145,7 +1146,7 @@ button {
     position: fixed;
     height: 50px;
     bottom: 60px;
-    right: 30px;
+    right: 18px;
     opacity: 1;
     z-index: 9999;
     -webkit-transition: all 500ms ease;
@@ -1294,7 +1295,7 @@ iframe {
 }
 
 #progressbarprogress.dark {
-    background: #333;
+    background: red;
 }
 
 dl.listeners {
