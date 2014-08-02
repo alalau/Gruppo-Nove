@@ -2425,7 +2425,7 @@ img.flag {
     position: absolute;
     left: 50%;
     margin-left: -250px;
-    top: 50%;
+    top: 45%;
     margin-top: -100px;
 }
 
@@ -2441,6 +2441,17 @@ img.flag {
     text-align: center;
     margin: 0;
     margin-top: -5px;
+}
+
+#teamBio h3 a, #teamBio p a {
+	text-decoration: none;
+	border: none;
+	color: black;
+}
+
+#teamBio h3 a:hover, #teamBio p a:hover {
+	color: #eb2030;
+    border-bottom: 2px solid;
 }
 
 .social-links {
