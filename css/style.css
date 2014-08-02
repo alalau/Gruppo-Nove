@@ -644,15 +644,15 @@ nav.hidden {
     background: #fafafa;
 }
 
-a#whatIsDesignLinkButton {
-position: absolute;
-left: 20%;
-margin-top: -15%;
+#whatIsDesignLinkButton {
+    position: absolute;
+    left: 35%;
+    margin-top: -20%;
 }
 
 img#whatIsDesignImg {
-    width: 86%;
-    margin: 0 auto;
+    width: 90%;
+    margin-left: 3%;
     display: block;
     opacity: 0;
 }
@@ -662,6 +662,7 @@ img#whatIsDesignImg {
     display: block;
     left: 80px;
     margin-top: 8%;
+    left: 7%;
     top: 0;
 }
 
@@ -712,7 +713,7 @@ img#whatIsDesignImg {
 }
 
 #whatIsDesignQuote {
-    width: 300px;
+    width: 360px;
     position: absolute;
     right: 30px;
     margin-top: 8%;
