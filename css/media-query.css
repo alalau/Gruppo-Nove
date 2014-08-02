@@ -136,6 +136,7 @@ and (max-width : 768px) {
 
 	nav {
 		position: absolute;
+		margin-top: 0 !important;
 	}
 
 	#navHomeLink {
@@ -694,6 +695,16 @@ and (max-width : 768px) {
 	.bio-interview-inner {
 		margin: 0;
 	}
+
+	.filterer {
+		margin-left: -250px;
+		padding-top: 100px;
+	}
+
+	#pushDown {
+		padding-top: 250px;
+	}
+
 }
 
 
@@ -798,7 +809,7 @@ and (max-width : 480px) {
 		margin: 0 auto;
 		left: initial;
 		display: block;
-		padding-top: 150px;
+		padding-top: 60px;
 	}
 
 	.filterer h3 {

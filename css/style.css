@@ -1514,6 +1514,8 @@ dd {
     height: 100%;
     display: inline-block;
     margin: 0;
+    float: left;
+    margin-right: 4px;
 }
 
 .chapter-highlight {
@@ -1532,6 +1534,14 @@ dd {
     background: rgba(0,0,0,0.3);
 }
 
+#chapters.dark p {
+    color: black;
+}
+
+#chapter:hover p {
+    color: #eb2030;
+}
+
 .chapter:hover .chapter-highlight {
     background: rgba(255,0,0,0.5);
 }
@@ -1540,17 +1550,16 @@ dd {
     opacity: 1 !important;
 }
 
+#chapters.dark .chapter:hover .chapter-highlight {
+    background: #eb2030;
+}
+
     #chapter-single { width: 100%; }
-
     #chapter-1 { width: 20%; color: #eb2030; }
-
     #chapter-2 { width: 17%; }
-
     #chapter-3 { width: 20%; color: #00b4ad; }
-
     #chapter-4 { width: 22%; color: #eac432; }
-
-    #chapter-5 { width: 20%; color: #E9712F; }
+    #chapter-5 { width: 19%; color: #E9712F; }
 
 #helpmesee {
     pointer-events: none;
@@ -1583,7 +1592,8 @@ dd {
 }
 
     #helpmeseeBio {
-        background: #333;
+        background: #fafafa;
+        border-top: 1px solid #ddd;
         bottom: 0;
         z-index: 99999;
         opacity: 0;
@@ -2066,6 +2076,11 @@ p.product-name {
 
     #interviewPic-11 {
         /* accurat */
+    }
+
+    #interviewPic-12 {
+        background-image: url(../images/interviews/todo.jpg);
+        background-position: center top;
     }
 
     #interviewPic-14 {

@@ -41,6 +41,8 @@ $(function() {
             $("#helpmesee").addClass("superHidden");
             $("#playPauseButtons").addClass("scrolled");
             $("#time").addClass("scrolled");
+            $("#progressbarprogress").addClass("dark");
+            $("#chapters").addClass("dark");
         } else {
             $("#overlay").removeClass("dim");
             $("#helpmeseeBio").removeClass("show");
@@ -48,6 +50,8 @@ $(function() {
             $("#helpmesee").removeClass("superHidden");
             $("#playPauseButtons").removeClass("scrolled");
             $("#time").removeClass("scrolled");
+            $("#progressbarprogress").removeClass("dark");
+            $("#chapters").removeClass("dark");
         }
     }
 
