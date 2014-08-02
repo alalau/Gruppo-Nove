@@ -130,30 +130,5 @@ $(function() {
 		resizeMap() 
 	});
 
-/* =========================================================
- * Homepage hover state
- * ========================================================= */
-
-	$("#answers").hover(
-	  function () {
-	    $(this).addClass("open");
-	  },
-	  function () {
-	    $(this).removeClass("open");
-	  }
-	);
-
-/* =========================================================
- * Bio Image Hover
- * ========================================================= */
-
-	$(".bio-image").hover(
-        function(){
-            $(".imgDimmer").css("opacity","0.5");
-        }, function() {
-            $(".imgDimmer").css("opacity","0");
-        }
-    );
-
 });
 

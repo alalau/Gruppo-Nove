@@ -2041,54 +2041,55 @@ p.product-name {
 }
 
     #interviewPic-2 {
-        background-image: url(../images/interviews/giulio_iachetti.jpg);
+        background-image: url(../images/interviews/iachetti.jpg);
     }
 
     #interviewPic-3 {
-         background-image: url(../images/interviews/francesca_l.jpg);
+         background-image: url(../images/interviews/lanzavecchia.jpg);
     }
 
     #interviewPic-6 {
-         background-image: url(../images/interviews/andrea_ponsi.jpg);
+         background-image: url(../images/interviews/ponsi.jpg);
+         background-position: 20% center;
     }
 
     #interviewPic-7 {
-         background-image: url(../images/interviews/franco_dominici.jpg);
+        /* fanco dominici segis */
     }
 
     #interviewPic-9 {
-         background-image: url(../images/interviews/alessandra_baldereschi.jpg);
+         background-image: url(../images/interviews/alessandra.jpg);
     }
 
     #interviewPic-10 {
-         background-image: url(../images/interviews/jan-christoph_joels.jpg);
-         background-position: left top;
+        /* jan christoph joels experientia */
     }
 
     #interviewPic-11 {
-         background-image: url(../images/interviews/accurat.jpg);
+        /* accurat */
     }
 
     #interviewPic-14 {
-         background-image: url(../images/interviews/marco_z.jpg);
+         background-image: url(../images/interviews/zanuso.jpg);
+         background-position: 20% center;
     }
 
-    #interviewPic-14 {
-         background-image: url(../images/interviews/lucio_luzo.jpg);
-         background-position: left center;
+    #interviewPic-15 {
+         background-image: url(../images/interviews/luzo.jpg);
+         background-position: 20% center;
     }
 
     #interviewPic-17 {
-         background-image: url(../images/interviews/heather_pletschett.jpg);
+         background-image: url(../images/interviews/pletschett.jpg);
          background-position: right center;
     }
 
     #interviewPic-18 {
-         background-image: url(../images/interviews/jay_deguchi.jpg);
+         background-image: url(../images/interviews/deguchi.jpg);
     }
 
     #interviewPic-20 {
-        background-image: url(../images/interviews/josh_hayward.jpg);
+        background-image: url(../images/interviews/hayward.jpg);
         background-position: left center;
     }
 

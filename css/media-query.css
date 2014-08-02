@@ -641,10 +641,26 @@ and (max-width : 480px) {
 		padding-bottom: 10px;
 	}
 
-}
+	#pushDown {
+		display: none;
+	}
 
-/* SMALL Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (max-width : 360px) {
+	.filterer {
+		position: relative;
+		padding-bottom: 60px;
+		width: 100%;
+		max-width: 200px;
+		text-align: center;
+		margin: 0 auto;
+		left: initial;
+		display: block;
+		padding-top: 150px;
+	}
+
+	.filterer h3 {
+		float: initial;
+		padding: 20px 0;
+		margin: 0;
+	}
 
 }
