@@ -61,14 +61,6 @@ $(function() {
         return false;
     });
 
-    $(".item-inner").hover(
-        function(){
-            $(".interviewPic").css("opacity","0.5");
-        }, function() {
-            $(".interviewPic").css("opacity","1");
-        }
-    );
-
 /* =========================================================
  * Move Quote on Scroll
  * ========================================================= */

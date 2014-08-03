@@ -2048,8 +2048,21 @@ p.product-name {
     -ms-transition:     all 500ms ease;
     -o-transition:      all 500ms ease;
     transition:         all 500ms ease;
-
+    opacity: 0.9;
 }
+
+.interviewPic:hover {
+    -webkit-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    -ms-transform: scale(1.05,1.05);
+    -o-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+    opacity: 1;
+}
+
+    #interviewPic-1 {
+        background-image: url(../images/interviews/novembre.jpg);
+    }
 
     #interviewPic-2 {
         background-image: url(../images/interviews/iachetti.jpg);
@@ -2059,13 +2072,28 @@ p.product-name {
          background-image: url(../images/interviews/lanzavecchia.jpg);
     }
 
+    #interviewPic-4 {
+        /*
+         background-image: url(../images/interviews/bernstein.jpg);
+         */
+    }
+
+    #interviewPic-5 {
+         background-image: url(../images/interviews/sebregondi.jpg);
+    }
+
+
     #interviewPic-6 {
          background-image: url(../images/interviews/ponsi.jpg);
          background-position: 20% center;
     }
 
     #interviewPic-7 {
-        /* fanco dominici segis */
+        background-image: url(../images/interviews/dominici.jpg);
+    }
+
+    #interviewPic-8 {
+        background-image: url(../images/interviews/romano.jpg);
     }
 
     #interviewPic-9 {
@@ -2073,16 +2101,19 @@ p.product-name {
     }
 
     #interviewPic-10 {
-        /* jan christoph joels experientia */
+        background-image: url(../images/interviews/zoels.jpg);
     }
 
     #interviewPic-11 {
-        /* accurat */
+       background-image: url(../images/interviews/accurat.jpg);
+    }
+
+    #interviewPic-13 {
+        background-image: url(../images/interviews/todo.jpg);
     }
 
     #interviewPic-12 {
-        background-image: url(../images/interviews/todo.jpg);
-        background-position: center top;
+        background-image: url(../images/interviews/bassi.jpg);
     }
 
     #interviewPic-14 {
@@ -2095,6 +2126,12 @@ p.product-name {
          background-position: 20% center;
     }
 
+    #interviewPic-16 {
+        /*
+         background-image: url(../images/interviews/butler.jpg);
+         */
+    }
+
     #interviewPic-17 {
          background-image: url(../images/interviews/pletschett.jpg);
          background-position: right center;
@@ -2102,6 +2139,10 @@ p.product-name {
 
     #interviewPic-18 {
          background-image: url(../images/interviews/deguchi.jpg);
+    }
+
+    #interviewPic-19 {
+         background-image: url(../images/interviews/glasfurd-walker.jpg);
     }
 
     #interviewPic-20 {
