@@ -621,6 +621,10 @@ and (max-width : 768px) {
 		background: black;
 	}
 
+	nav.untouchable {
+		pointer-events: all !important;
+	}
+
 	nav.video-nav.untouchable {
 		pointer-events: all !important;
 	}
@@ -748,8 +752,7 @@ and (max-width : 480px) {
 	}
 
 	#intro-team {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding: 60px 10px 0px 10px;
 	}
 
 	#intro-team h1 {
