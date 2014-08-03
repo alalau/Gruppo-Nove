@@ -2452,8 +2452,10 @@ img.flag {
 }
 
 #teamBio h3 {
-    font-family: Bodoni;
-    font-size: 15px;
+    font-family: Futura, Futura-Medium, "Futura Medium", 'Open-Sans', sans-serif;
+    letter-spacing: 3px;
+	font-size: 12px;
+	font-weight: 300;
     display: block;
     text-align: center;
     margin: 0;
