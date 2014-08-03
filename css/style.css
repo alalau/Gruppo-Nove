@@ -2494,6 +2494,16 @@ a.social-link.linkedin {
     background-size: 30px;
 }
 
+a.social-link.instagram {
+    background: url(../images/icons/instagram.png) 50% 0% no-repeat;
+    background-size: 30px;
+}
+
+a.social-link.vimeo {
+    background: url(../images/icons/vimeo.png) 50% 0% no-repeat;
+    background-size: 30px;
+}
+
 .gruppo-footer .social-icons {
     display: inline-block;
     position: absolute;
