@@ -1656,6 +1656,7 @@ h1.bioHeader {
     border-bottom: 5px solid;
     display: table;
     letter-spacing: 0.1em;
+    color: #eb2030
 }
 
 .bioPic {
@@ -1670,6 +1671,8 @@ p.bioDescription {
     left: 50%;
     top: 260px;
     padding-left: 0px;
+    z-index: 30;
+    color: #eb2030;
 }
 
 p#bioQuote-1 {
@@ -1720,9 +1723,9 @@ p#bioQuote-1 {
 
 .image-3-landscape {
     width: 55%;
-    left: 30%;
+    left: 25%;
     position: absolute;
-    top: 915px;
+    top: 940px;
     z-index: 10;
 }
 
@@ -2096,9 +2099,8 @@ p.product-name {
     }
 
     #interviewPic-4 {
-        /*
-         background-image: url(../images/interviews/bernstein.jpg);
-         */
+        background-image: url(../images/interviews/bernstein.jpg);
+        background-position: center top;
     }
 
     #interviewPic-5 {
@@ -2150,9 +2152,8 @@ p.product-name {
     }
 
     #interviewPic-16 {
-        /*
          background-image: url(../images/interviews/butler.jpg);
-         */
+         background-position: right center;
     }
 
     #interviewPic-17 {
@@ -2763,12 +2764,14 @@ a.social-link:hover {
     left: 0;
     position: relative;
     padding: 30px;
+    text-align: center;
 }
 
 #city-gallery {
     position: relative;
-    margin: 0;
     padding: 0;
+    max-width: 1420px;
+    margin: 0 auto;
 }
 
 #city-gallery li {
@@ -2868,9 +2871,8 @@ a.social-link:hover {
     background: #dedede;
     display: inline-block;
     position: relative;
-    left: 50%;
-    margin-left: -40%;
     overflow: hidden;
+    max-width: 1280px;
 }
 
 .city-video .linkButton {
@@ -2943,4 +2945,5 @@ p.coordinates.quote {
     position: absolute;
     bottom: -90px;
     right: -4%;
+    text-align: left;
 }
