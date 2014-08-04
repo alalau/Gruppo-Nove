@@ -776,6 +776,14 @@ and (max-width : 768px) {
 		overflow: hidden;
 	}
 
+	#teamBio {
+		position: relative;
+		margin: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px;
+	}
+
 }
 
 
