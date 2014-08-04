@@ -31,29 +31,21 @@
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
-	<script type="text/javascript">
-
-		$(function() {
-			var movementStrength = 25;
-			var height = movementStrength / $(window).height();
-			var width = movementStrength / $(window).width();
-			$(window).mousemove(function(e){
-				var pageX = e.pageX - ($(window).width() / 2);
-				var pageY = e.pageY - ($(window).height() / 2);
-				var newvalueX = width * pageX * -1 - 25;
-				var newvalueY = height * pageY * -1 - 50;
-				$('.film-box').css("background-position", newvalueX+"px     "+newvalueY+"px");
+	<script>
+		function showYourself() {
+			var scrollTop     = $(window).scrollTop();
+			$( "li" ).each(function( index ) {
+				elementOffset = $(this).offset().top;
+				distance      = (elementOffset - scrollTop);
+				if (distance < $(window).height() ) {
+	                $(this).addClass("onscreen");
+	            }
 			});
-		});
-
-		$(window).scroll(function(){
-            var scrollTop     = $(window).scrollTop(),
-            mapOffset = $('#mapPadding').offset().top,
-            mapDistance  = (mapOffset - scrollTop);
-            $("#map-section").css({
-                top: mapDistance / 4
-            });
-        });
+        }
+	    showYourself();
+	    $(window).scroll(function(){
+	        showYourself();
+	    });
 
 	</script>
 
@@ -86,67 +78,53 @@
 
 		<div id="main-content">
 			<div class="city-container">
-
-				<section id="main-film">
-					<div id="main-film-text">
-						<h1>Milano</h1>
-						<span></span>
-						<p class="city-description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt erat in venenatis adipiscing. Nulla ultrices tellus a erat fringilla fringilla. Cras non tellus et elit pharetra placerat vitae vitae enim. Donec eleifend augue imperdiet purus aliquam, ac laoreet arcu suscipit. Nunc lorem velit, aliquet a feugiat pulvinar, vulputate malesuada lacus. Suspendisse vel risus vehicula sapien tempus ultricies at accumsan quam.
-						</p>
+				<div class="city-pushdown"></div>
+				<a href="places-people-things.html">
+					<div class="city-video">
+						<div class="city-video-image" style="background-image: url(../../images/experience/milan/hero.jpg);"></div>
+						<div class="city-video-title">
+							<h1>Milano</h1>
+							<h3>Places, People, Things</h3>
+						</div>
+						<p class="linkButton">Watch the Film</p>
 					</div>
-					<div id="milan-film-box" class="film-box">
-						<a href="places-people-things"></a>
-						<img class="play-icon" src="../../images/icons/play.svg" onerror="this.onerror=null; this.src='../../images/icons/play.png'">
-						<img class="play-icon non-hover" src="../../images/icons/play-blue.svg" onerror="this.onerror=null; this.src='../../images/icons/play-blue.png'">
+				</a>
+
+				<ul id="city-gallery">
+					<li><img src="../../images/experience/milan/1.jpg" alt="img">
+						<p class="coordinates quote">45.47° N, <br>9.18° E</p>
+					</li>
+					<li><img src="../../images/experience/milan/2.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/3.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/4.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/5.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/6.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/7.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/8.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/9.jpg" alt="img"></li>
+					<li><img src="../../images/experience/milan/10.jpg" alt="img"></li>
+					<li class="clearfix"></li>
+				</ul>
+				<a href="campari.html">
+					<div class="city-video">
+						<div class="city-video-image" style="background-image: url(../../images/experience/milan/campari.jpg);"></div>
+						<div class="city-video-title">
+							<h1>Campari</h1>
+							<h3>di Milano</h3>
+						</div>
+						<p class="linkButton">Watch the Film</p>
 					</div>
-				</section>
-
-				<section id="secondary-images">
-					<ul>
-						<li id="image_1"><img src="../../images/experience/milan-1.jpg"></li>
-						<li id="image_2"><img src="../../images/experience/milan-2.jpg"></li>
-						<li id="image_3"><img src="../../images/experience/milan-3.jpg"></li>
-						<li id="image_4">
-							<div id="milan-interview-film-box" class="film-box">
-								<a href="milan/interview.html"></a>
-								<img class="play-icon" src="../../images/icons/play.svg" onerror="this.onerror=null; this.src='../../images/icons/play.png'">
-								<img class="play-icon non-hover" src="../../images/icons/play-blue.svg" onerror="this.onerror=null; this.src='../../images/icons/play-blue.png'">
-							</div>
-						</li>
-						<li id="image_5"><img src="../../images/experience/milan-4.jpg"></li>
-						<li id="image_6"><img src="../../images/experience/milan-5.jpg"></li>
-						<li id="image_7">
-							<div id="milan-campari-film-box" class="film-box">
-								<a href="milan/campari.html"></a>
-								<img class="play-icon" src="../../images/icons/play.svg" onerror="this.onerror=null; this.src='../../images/icons/play.png'">
-								<img class="play-icon non-hover" src="../../images/icons/play-blue.svg" onerror="this.onerror=null; this.src='../../images/icons/play-blue.png'">
-							</div>
-						</li>
-					</ul>
-
-					<p>coordinates</p>
-					<div id="interview-text">
-						<h1>Interview</h1>
-						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt erat in venenatis adipiscing. Nulla ultrices tellus a erat fringilla fringilla. Cras non tellus et elit pharetra placerat vitae vitae enim. Donec eleifend augue imperdiet purus aliquam, ac laoreet arcu suscipit.</p>
-					</div>
-
-					<div id="campari-text">
-						<h1>Campari</h1>
-						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt erat in venenatis adipiscing. Nulla ultrices tellus a erat fringilla fringilla. Cras non tellus et elit pharetra placerat vitae vitae enim. </p>
-					</div>
-				</section>
-
+				</a>
 			</div>
 
-			<div class="map-padding" id="mapPadding"></div>
+			<div class="map-padding"></div>
 		</div>
 
 		<section id="map-section">
                 <div id="map">
                     <img src="../../images/map-white.jpg" alt="italy map" id="mapImg">
                     <div class="marker-wrapper" id="milan-wrapper">
-                        <a class="marker" href="../milan">
+                        <a class="marker glowing" href="../milan">
                             <div class="marker-label leftside">Milan</div>
                             <div class="marker-glow"></div><div class="marker-inner"></div>
                         </a>

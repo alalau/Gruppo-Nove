@@ -3,6 +3,35 @@
  * Media Query Styles
  * ========================================================= */
 
+/* Everything bigger than portrait tablet ----------- */
+@media only screen 
+and (min-width : 770px) {
+
+	.item-inner {
+	    margin-top: 80%;
+	    opacity: 0;
+	    -webkit-transition: all 500ms ease-out 0.1s;
+	    -moz-transition:    all 500ms ease-out 0.1s;
+	    -ms-transition:     all 500ms ease-out 0.1s;
+	    -o-transition:      all 500ms ease-out 0.1s;
+	    transition:         all 500ms ease-out 0.1s;
+	}
+
+	.interview-title {
+        opacity: 0;
+        margin-bottom: -50%;
+        -webkit-transition: all 500ms ease-out 0.1s;
+        -moz-transition:    all 500ms ease-out 0.1s;
+        -ms-transition:     all 500ms ease-out 0.1s;
+        -o-transition:      all 500ms ease-out 0.1s;
+        transition:         all 500ms ease-out 0.1s;
+    }
+
+    #city-gallery li {
+	    opacity: 0;
+	    top: 150px;
+	}
+}
 
 @media only screen 
 and (max-width : 1200px) {
@@ -510,11 +539,11 @@ and (max-width : 768px) {
 		background: none;
 		padding: 9px;
 		margin: 0;
-		webkit-transform: none;
-	    -moz-transform: none;
-	    -ms-transform: none;
-	    -o-transform: none;
-	    transform: none;
+		-webkit-transform:  rotate(0deg);
+	    -moz-transform:     rotate(0deg);
+	    -ms-transform:      rotate(0deg);
+	    -o-transform:       rotate(0deg);
+	    transform:          rotate(0deg);
 	}
 
 	#gruppo-grid {
@@ -709,6 +738,44 @@ and (max-width : 768px) {
 		padding-top: 250px;
 	}
 
+	.interviewPic {
+		opacity: 1;
+	}
+
+	.interviewPic:hover {
+	    -webkit-transform: 	none;
+	    -moz-transform: 	none;
+	    -ms-transform: 		none;
+	    -o-transform: 		none;
+	    transform: 			none;
+	}
+
+	#city-gallery {
+		text-align: center;
+	}
+
+	#city-gallery li {
+		width: 100% !important;
+		padding: 0;
+		left: 0 !important;
+		right: 0;
+		float: initial;
+		max-width: 400px;
+		margin: 0 auto !important;
+		padding-bottom: 20px;
+	}
+
+	.city-video {
+		width: 98%;
+		padding-bottom: 70%;
+		background: #dedede;
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		margin-left: -49%;
+		overflow: hidden;
+	}
+
 }
 
 
@@ -856,4 +923,7 @@ and (max-width : 480px) {
 		width: 100%;
 	}
 
+	.city-video-title {
+		top: 15%;
+	}
 }

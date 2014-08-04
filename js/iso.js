@@ -1,6 +1,33 @@
 $(function() {
 
 /* =========================================================
+ * populate animation
+ * ========================================================= */
+
+    var itemList = ['#item-1', '#item-2', '#item-3', '#item-4', '#item-5',
+        '#item-6', '#item-7', '#item-8', '#item-9', '#item-10',
+        '#item-11', '#item-12', '#item-13', '#item-14', '#item-15', 
+        '#item-16', '#item-17', '#item-18', '#item-19', '#item-20'];
+
+    var itemListLength = itemList.length;
+
+    function showYourself() {
+        for (var i = 0; i < itemListLength; i++) {
+            var scrollTop     = $(window).scrollTop(),
+                elementOffset = $(itemList[i]).offset().top,
+                distance      = (elementOffset - scrollTop);
+            if (distance < ($(window).height() * 0.8) ) {
+                $(itemList[i]).addClass("onscreen");
+            }
+        }
+    }
+
+    showYourself();
+    $(window).scroll(function(){
+        showYourself();
+    });
+
+/* =========================================================
  * Design Type DropDown
  * ========================================================= */
 
@@ -48,6 +75,9 @@ $(function() {
                 queue: false
             }
          });
+        for (var i = 0; i < itemListLength; i++) {
+            $(itemList[i]).addClass("onscreen");
+        }
         if (selector == "*") {             $("#first").text("all"); }
         if (selector == ".product") {      $("#first").text("product"); }
         if (selector == ".interaction") {  $("#first").text("interaction"); }
@@ -60,16 +90,5 @@ $(function() {
         $("#answers").toggleClass("open");
         return false;
     });
-
-/* =========================================================
- * Move Quote on Scroll
- * ========================================================= */
-
-   $(window).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        $('#gridQuote').css({
-            top: 150 - (scrollTop / 3)
-        });
-   });
 
 });

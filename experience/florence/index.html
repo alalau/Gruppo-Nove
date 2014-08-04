@@ -31,6 +31,24 @@
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
+	<script>
+		function showYourself() {
+			var scrollTop     = $(window).scrollTop();
+			$( "li" ).each(function( index ) {
+				elementOffset = $(this).offset().top;
+				distance      = (elementOffset - scrollTop);
+				if (distance < $(window).height() ) {
+	                $(this).addClass("onscreen");
+	            }
+			});
+        }
+	    showYourself();
+	    $(window).scroll(function(){
+	        showYourself();
+	    });
+
+	</script>
+
 </head>
 
 <body>
@@ -60,12 +78,17 @@
 
 		<div id="main-content">
 			<div class="city-container">
-				<section class="main-film">
-					<h1>Florence</h1>
-					<p class="city-description">
-						Lorem Ipsum blah blah blah
-					</p>
-				</section>
+				<div class="city-pushdown"></div>
+				<a href="places-people-things.html">
+					<div class="city-video">
+						<div class="city-video-image" style="background-image: url(../../images/experience/bologna/hero.jpg);"></div>
+						<div class="city-video-title">
+							<h1>Museo Marino Marini</h1>
+							<h3>in Firenze</h3>
+						</div>
+						<p class="linkButton">Watch the Film</p>
+					</div>
+				</a>
 			</div>
 
 			<div class="map-padding"></div>
@@ -93,7 +116,7 @@
                         </a>
                     </div>
                     <div class="marker-wrapper" id="florence-wrapper" >
-                        <a class="marker" href="../florence">
+                        <a class="marker glowing" href="../florence">
                             <div class="marker-label">Florence</div>
                             <div class="marker-glow"></div><div class="marker-inner"></div>
                         </a>

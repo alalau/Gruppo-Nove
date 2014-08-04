@@ -31,6 +31,24 @@
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
+	<script>
+		function showYourself() {
+			var scrollTop     = $(window).scrollTop();
+			$( "li" ).each(function( index ) {
+				elementOffset = $(this).offset().top;
+				distance      = (elementOffset - scrollTop);
+				if (distance < $(window).height() ) {
+	                $(this).addClass("onscreen");
+	            }
+			});
+        }
+	    showYourself();
+	    $(window).scroll(function(){
+	        showYourself();
+	    });
+
+	</script>
+
 </head>
 
 <body>
@@ -60,12 +78,33 @@
 
 		<div id="main-content">
 			<div class="city-container">
-				<section class="main-film">
-					<h1>Lerici</h1>
-					<p class="city-description">
-						Lorem Ipsum blah blah blah
-					</p>
-				</section>
+				<div class="city-pushdown"></div>
+				<a href="places-people-things.html">
+					<div class="city-video">
+						<div class="city-video-image" style="background-image: url(../../images/experience/lerici/hero.jpg);"></div>
+						<div class="city-video-title">
+							<h1>Lerici</h1>
+							<h3>Clever Title</h3>
+						</div>
+						<p class="linkButton">Watch the Film</p>
+					</div>
+				</a>
+
+				<ul id="city-gallery">
+					<li><img src="../../images/experience/lerici/1.jpg" alt="img">
+						<p class="coordinates quote">44.08° N, <br>9.91° E</p>
+					</li>
+					<li><img src="../../images/experience/lerici/2.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/3.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/4.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/5.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/6.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/7.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/8.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/9.jpg" alt="img"></li>
+					<li><img src="../../images/experience/lerici/10.jpg" alt="img"></li>
+					<li class="clearfix"></li>
+				</ul>
 			</div>
 
 			<div class="map-padding"></div>
@@ -87,7 +126,7 @@
                         </a>
                     </div>
                     <div class="marker-wrapper" id="lerici-wrapper" >
-                        <a class="marker" href="../lerici">
+                        <a class="marker glowing" href="../lerici">
                             <div class="marker-label leftside">Lerici</div>
                             <div class="marker-glow"></div><div class="marker-inner"></div>
                         </a>
