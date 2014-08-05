@@ -240,7 +240,7 @@ $(function() {
                         element.innerHTML = secondsToHms(data.duration);
 
                         /* if end of video */
-                        if (progressor > 99 ) {
+                        if (progressor == 100 ) {
                             if ($('#topOfBio').length > 0 ) { // if the bio actually exists
                                 if (scrollTop < scrollTransitionThreshold) { // if bio isn't already open
                                     $('html, body').animate({
