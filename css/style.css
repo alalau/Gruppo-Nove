@@ -1803,7 +1803,7 @@ p.product-name {
     } 
 
     .filterer {
-        padding-top: 210px;
+        padding-top: 160px;
         text-align: center;
         margin: 0px auto 0px -220px;
         display: inline-block;
@@ -1899,7 +1899,7 @@ p.product-name {
     }
 
     #pushDown {
-        padding-top: 400px;
+        padding-top: 280px;
     }
 
     .city-pushdown {

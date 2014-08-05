@@ -16,7 +16,7 @@ $(function() {
             var scrollTop     = $(window).scrollTop(),
                 elementOffset = $(itemList[i]).offset().top,
                 distance      = (elementOffset - scrollTop);
-            if (distance < ($(window).height() * 0.8) ) {
+            if (distance < ($(window).height()) ) {
                 $(itemList[i]).addClass("onscreen");
             }
         }
