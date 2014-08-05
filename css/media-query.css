@@ -784,6 +784,21 @@ and (max-width : 768px) {
 		padding: 30px;
 	}
 
+	#bio-gallery li {
+		width: 100% !important;
+		margin: 0 !important;
+		left: 0;
+		right: 0;
+		display: inline-block;
+		position: relative;
+		padding-top: 20px;
+	}
+
+	.bio-interview-inner {
+		width: 100%;
+		padding: 30px;
+	}
+
 }
 
 
