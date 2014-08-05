@@ -1360,7 +1360,7 @@ dl.listeners {
 }
 
     #overlay.dim {
-        background: rgba(255,255,255,0.9);
+        background: rgba(255,255,255,0.85);
         -webkit-transition: background 500ms ease-in;
         -moz-transition:    background 500ms ease-in;
         -ms-transition:     background 500ms ease-in;
@@ -1622,6 +1622,7 @@ dd {
  * Bio
  * ========================================================= */
 
+
 #bio {
     width: 100%;
     height: 100%;
@@ -1642,22 +1643,24 @@ dd {
 
     .bio-interview-inner {
         pointer-events: all;
-        max-width: 750px;
+        width: 80%;
+        max-width: 1420px;
         margin: 0 auto;
         position: relative;
-        margin-bottom: 200px;
+        padding-bottom: 8%;
     }
 
-h1.bioHeader {
-    position: absolute;
-    left: 45%;
-    top: 200px;
-    margin: 0;
-    border-bottom: 5px solid;
-    display: table;
-    letter-spacing: 0.1em;
-    color: #eb2030
+p.credit {
+    text-align: center;
+    font-size: 11px;
+    color: #333;
 }
+
+.bio-description h1 {
+    margin-left: -15px;
+}
+
+/*
 
 .bioPic {
     width: 60%;
@@ -1777,6 +1780,8 @@ p.product-name {
 .interviewers-pic img {
     width: 95%;
 }
+
+*/
 
 /* =========================================================
  * Interview Grid
@@ -2767,14 +2772,14 @@ a.social-link:hover {
     text-align: center;
 }
 
-#city-gallery {
+#city-gallery, #bio-gallery {
     position: relative;
     padding: 0;
     max-width: 1420px;
     margin: 0 auto;
 }
 
-#city-gallery li {
+#city-gallery li, #bio-gallery li {
     width: 30%;
     margin: 1.5%;
     position: relative;
@@ -2791,72 +2796,82 @@ a.social-link:hover {
     top: 10px;
 }
 
-#city-gallery img {
+#city-gallery img, #bio-gallery img {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
 }
 
-#city-gallery li:first-child {
+#city-gallery li:first-child, #bio-gallery li:first-child {
     margin-top: 4%;
     width: 45%;
 }
 
-#city-gallery li:nth-child(2) {
+#city-gallery li:nth-child(2), #bio-gallery li:nth-child(2) {
     margin-top: 10%;
     margin-left: 5%;
     width: 45%;
 }
 
-#city-gallery li:nth-child(3) {
+#bio-gallery li:nth-child(2) {
+    width: 40%;
+    margin-top: 15%;
+}
+
+#city-gallery li:nth-child(3), #bio-gallery li:nth-child(3) {
     clear: left;
     margin-top: -5%;
     margin-left: 2.5%;
     width: 25%;
 }
 
-#city-gallery li:nth-child(4) {
+#bio-gallery li:nth-child(3) {
+    margin-top: 2%;
+    min-height: 400px;
+}
+
+#city-gallery li:nth-child(4), #bio-gallery li:nth-child(4) {
     margin-left: 32%;
     width: 28%;
 }
 
-#city-gallery li:nth-child(5) {
+#city-gallery li:nth-child(5), #bio-gallery li:nth-child(5) {
     clear: left;
     width: 24%;
 }
 
-#city-gallery li:nth-child(6) {
+#city-gallery li:nth-child(6), #bio-gallery li:nth-child(6) {
     margin-left: 4%;
     margin-top: -31%;
     width: 25%;
 }
 
-#city-gallery li:nth-child(7) {
+#city-gallery li:nth-child(7), #bio-gallery li:nth-child(7) {
     width: 32%;
     margin-left: 7%;
     margin-top: -14%;
 }
 
-#city-gallery li:nth-child(8) {
+#city-gallery li:nth-child(8), #bio-gallery li:nth-child(8) {
     clear: left;
     margin-left: 3%;
     margin-top: 3%;
     width: 32%;
 }
 
-#city-gallery li:nth-child(9) {
+#city-gallery li:nth-child(9), #bio-gallery li:nth-child(9) {
     width: 23%;
     margin-top: -5%;
     margin-left: 2%;
 }
 
-#city-gallery li:nth-child(10) {
+#city-gallery li:nth-child(10), #bio-gallery li:nth-child(10) {
     margin-top: -5%;
     margin-left: 3%;
     width: 28%;
 }
 
-#city-gallery li.clearfix {
+#city-gallery li.clearfix, #bio-gallery li.clearfix{
     float: initial;
     clear: both;
     width: 90%;
