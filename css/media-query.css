@@ -799,6 +799,10 @@ and (max-width : 768px) {
 		padding: 30px;
 	}
 
+	#bio-gallery li:nth-child(3) {
+		min-height: initial;
+	}
+
 }
 
 
