@@ -638,7 +638,7 @@ nav.hidden {
     margin: 0 auto;
 }
 
-#whatIsDesign, #whatItIsPlaya {;
+#whatIsDesign, #whatItIsPlaya {
     padding: 30px;
     overflow: hidden;
     position: relative;
@@ -1506,10 +1506,6 @@ dd {
     opacity: 0;
 }
 
-#chapters.shrunk p {
-    opacity: 0;
-}
-
 .chapter {
     height: 100%;
     display: inline-block;
@@ -1540,10 +1536,6 @@ dd {
     color: black;
 }
 
-#chapter:hover p {
-    color: #eb2030;
-}
-
 .chapter:hover .chapter-highlight {
     background: rgba(255,0,0,0.5);
 }
@@ -1554,6 +1546,10 @@ dd {
 
 #chapters.dark .chapter:hover .chapter-highlight {
     background: #eb2030;
+}
+
+#chapters.cultural-chapters p {
+	opacity: 0;
 }
 
     #chapter-single { width: 100%; }
