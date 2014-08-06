@@ -782,8 +782,8 @@ and (max-width : 768px) {
 	#bio-gallery li {
 		width: 100% !important;
 		margin: 0 !important;
-		left: 0;
-		right: 0;
+		left: 0 !important;
+		right: 0 !important;
 		display: inline-block;
 		position: relative;
 		padding-top: 20px;
@@ -948,10 +948,6 @@ and (max-width : 480px) {
 
 	p#bioQuote-2 {
 		width: 100%;
-	}
-
-	.city-video-title {
-		top: 15%;
 	}
 
 	.city h1 {

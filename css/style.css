@@ -2791,6 +2791,7 @@ a.social-link:hover {
     margin-left: -150px;
     text-align: center;
     top: 50%;
+    margin-top: -20px;
     font-family: 'Montserrat', sans-serif;
 }
 
