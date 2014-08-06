@@ -767,13 +767,8 @@ and (max-width : 768px) {
 
 	.city-video {
 		width: 98%;
-		padding-bottom: 70%;
-		background: #dedede;
-		display: inline-block;
-		position: relative;
-		left: 50%;
-		margin-left: -49%;
-		overflow: hidden;
+		padding-bottom: 55%;
+		margin-bottom: 30px;
 	}
 
 	#teamBio {

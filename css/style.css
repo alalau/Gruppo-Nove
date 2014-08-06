@@ -354,7 +354,7 @@ nav.hidden {
     transition: width 500ms ease;
 }
 
-#nav-logo-controls {
+#nav-logo-controls.down {
     background: white;
 }
 
@@ -2781,15 +2781,7 @@ a.social-link:hover {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    max-width: 1280px;
-}
-
-.city-video h2 {
-    position: absolute;
-    color: white;
-    font-size: 12px;
-    display: inline-table;
-    border-bottom: 2px solid white;
+    max-width: 1200px;
 }
 
 .city-video-title {
@@ -2798,36 +2790,39 @@ a.social-link:hover {
     left: 50%;
     margin-left: -150px;
     text-align: center;
-    top: 42%;
+    top: 50%;
     font-family: 'Montserrat', sans-serif;
 }
 
-img#city-video-logo {
+.city-video-title h3 {
+    font-family: Bodoni;
+    font-style: italic;
+    color: #eb2030;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.city-video:hover .city-video-title h3 {
+    opacity: 1;
+}
+
+#city-video-text {
     position: absolute;
-    top: 20px;
-    width: 30px;
+    left: 2%;
+    width: 96%;
+    top: 4%;
+}
+
+h2.label-bottom {
+    bottom: 8px;
     left: 50%;
-    margin-left: -15px;
-}
-
-h2.label-left {
-    left: 2px;
-    top: 50%;
-    -webkit-transform:  rotate(-90deg);
-    -moz-transform:     rotate(-90deg);
-    -ms-transform:      rotate(-90deg);
-    -o-transform:       rotate(-90deg);
-    transform:          rotate(-90deg);
-}
-
-h2.label-right {
-    right: 2px;
-    top: 50%;
-    -webkit-transform:  rotate(90deg);
-    -moz-transform:     rotate(90deg);
-    -ms-transform:      rotate(90deg);
-    -o-transform:       rotate(90deg);
-    transform:          rotate(90deg);
+    margin-left: -120px;
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    border-bottom: 2px solid white;
 }
 
 .city-video h1 {
