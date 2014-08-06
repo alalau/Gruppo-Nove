@@ -803,6 +803,11 @@ and (max-width : 768px) {
 		min-height: initial;
 	}
 
+	.city h1 {
+		font-size: 75px;
+		height: 100px;
+	}
+
 }
 
 
@@ -952,5 +957,13 @@ and (max-width : 480px) {
 
 	.city-video-title {
 		top: 15%;
+	}
+
+	.city h1 {
+		font-size: 30px;
+	}
+
+	.italia-america-divide {
+		width: 245px;
 	}
 }
