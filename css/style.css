@@ -2454,6 +2454,11 @@ a.social-link.vimeo {
     background-size: 30px;
 }
 
+a.social-link.flickr {
+    background: url(../images/icons/flickr.png) 50% 0% no-repeat;
+    background-size: 30px;
+}
+
 .gruppo-footer .social-icons {
     display: inline-block;
     position: absolute;
