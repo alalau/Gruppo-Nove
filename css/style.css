@@ -1653,131 +1653,11 @@ p.credit {
 }
 
 .bio-description h1 {
-    margin-left: -15px;
+    margin-left: -15%;
+    border-bottom: 4px solid;
+    display: inline-table;
+    letter-spacing: 0.2em;
 }
-
-/*
-
-.bioPic {
-    width: 60%;
-    padding: 30px;
-    margin-bottom: 75px;
-}
-
-p.bioDescription {
-    width: 40%;
-    position: absolute;
-    left: 50%;
-    top: 260px;
-    padding-left: 0px;
-    z-index: 30;
-    color: #eb2030;
-}
-
-p#bioQuote-1 {
-    width: 50%;
-}
-
-.bio-images {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.bio-image img {
-    width: 100%;
-}
-
-.bio-image {
-    z-index: 0;
-    padding: 10px;
-    position: absolute;
-}
-
-.bio-image:hover {
-    z-index: 99;
-}
-
-.bio-image:hover .imgDimmer{
-    opacity: 0 !important;
-}
-
-.bio-image:hover .product-name {
-    opacity: 1;
-}
-
-.image-1-portrait {
-    width: 40%;
-    margin-top: -70px;
-    right: 0;
-    z-index: 20;
-}
-
-.image-2-landscape {
-    width: 50%;
-    margin-top: 60px;
-    z-index: 0;
-    left: 15px;
-}
-
-.image-3-landscape {
-    width: 55%;
-    left: 25%;
-    position: absolute;
-    top: 940px;
-    z-index: 10;
-}
-
-.image-4-square {
-    width: 40%;
-    margin-top: 480px;
-    margin-left: 8%;
-    z-index: 20;
-}
-
-#bioQuote-2 {
-    position: absolute;
-    width: 50%;
-    right: 60px;
-    top: 1250px;
-    z-index: 30;
-}
-
-p.product-name {
-    margin: 0;
-    text-align: left;
-    color: #eb2030;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    opacity: 0;
-}
-
-.imgDimmer {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    width: calc(100% - 20px);
-    top: 0;
-    height: 100%;
-    height: calc(100% - 40px);
-    background: white;
-    opacity: 0;
-    margin: 10px;
-}
-
-.interviewers-pic {
-    margin-top: 900px;
-    width: 100%;
-    text-align: center;
-    z-index: -10;
-}
-
-.interviewers-pic img {
-    width: 95%;
-}
-
-*/
 
 /* =========================================================
  * Interview Grid
@@ -2803,14 +2683,20 @@ a.social-link:hover {
     width: 45%;
 }
 
+#bio-gallery li:first-child {
+    width: 35%;
+    left: 10%;
+}
+
 #city-gallery li:nth-child(2), #bio-gallery li:nth-child(2) {
     margin-top: 10%;
     margin-left: 5%;
     width: 45%;
 }
 
+
 #bio-gallery li:nth-child(2) {
-    width: 40%;
+    width: 35%;
     margin-top: 15%;
 }
 
