@@ -803,6 +803,10 @@ and (max-width : 768px) {
 		height: 100px;
 	}
 
+	.bio-description h1 {
+		margin: 0;
+	}
+
 }
 
 
