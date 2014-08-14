@@ -5,6 +5,7 @@ $(function() {
     var scrollTop = 0; // global scrollTOp variable
     var scrollTopPadding = 0; // distance from top that the video will scroll to when bio activated
     var scrollTransitionThreshold = 100; // when to toggle on/off the bio state
+    var play = true;
 
 /* =========================================================
  * Hiding and showing elements on mouse movement
@@ -185,6 +186,7 @@ $(function() {
                 froogaloop.api('play');
                 $("#playButton").removeClass("show");
                 $("#pauseButton").addClass("show");
+                play = true;
             }, false);
 
             // Call pause when pause button clicked
@@ -192,6 +194,7 @@ $(function() {
                 froogaloop.api('pause');
                 $("#playButton").addClass("show");
                 $("#pauseButton").removeClass("show");
+                play = false;
             }, false);
 
             // Call volume when volume button clicked
@@ -208,6 +211,31 @@ $(function() {
             }, false);
 
         }
+        
+        /*
+         * Pause video when spacebar is pressed
+         *
+         */
+        
+        $(window).keydown(function(e) {
+			if(e.keyCode == '32') {
+				console.log("Spacebar");
+				if(play) {
+					console.log("Pause Video");
+					froogaloop.api('pause');
+		            $("#playButton").addClass("show");
+		            $("#pauseButton").removeClass("show");
+		            play = false;
+				} else {
+					console.log("Play Video");
+					froogaloop.api('play');
+	                $("#playButton").removeClass("show");
+	                $("#pauseButton").addClass("show");
+	                play = true;	
+				}
+			}
+			return false;
+		});
 
         // function for converting seconds into a time to be displayed
         function secondsToHms(d) {
