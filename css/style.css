@@ -144,7 +144,7 @@ nav.untouchable {
 }
 
 nav.past-expanded {
-    background: white;
+    background: #fafafa;
 }
 
 nav.past-expanded, nav.hero2.past-expanded {
@@ -338,7 +338,6 @@ nav.hidden {
 }
 
 #nav-logo-controls {
-    width: 100%;
     height: 100px;
     display: inline-block;
     position: fixed;
